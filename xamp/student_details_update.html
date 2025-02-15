@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details Update</title>
+    <link rel="stylesheet" href="static/student_details_update_styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="image/logo.png" alt="University Logo">
+        <h1>University Name</h1>
+    </div>
+    <div class="content">
+        <div class="search-box">
+            <input type="text" id="studentUSN" placeholder="Enter Student USN">
+            <br>
+            <button onclick="searchStudent();">Search</button>
+        </div>
+        <div class="student-details">
+            <div class="left-side">
+                <h2>Student Details</h2>
+                <div id="studentInfo"></div>
+                <img id="studentImage" width="300" height="200">
+                <button id="deleteButton" onclick="deleteStudent()" class="submit-button">Delete Student</button>
+            </div>
+            <div class="right-side">
+                <h2>Update Student Details</h2>
+                <form id="updateStudentForm">
+                    <div class="form-group">
+                        <label for="updateName">Student Name:</label>
+                        <input type="text" id="updateName" name="studentName">
+                        <input type="checkbox" id="updateNameCheckbox" name="updateNameCheckbox" value="updateName">
+                        <label for="updateNameCheckbox">Update Name</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="updatePhone">Student Phone:</label>
+                        <input type="tel" id="updatePhone" name="studentPhone">
+                        <input type="checkbox" id="updatePhoneCheckbox" name="updatePhoneCheckbox" value="updatePhone">
+                        <label for="updatePhoneCheckbox">Update Phone</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="updateSemester">Semester:</label>
+                        <select id="updateSemester" name="semester" class="submit-button">
+                            <option value="Semester 1">Semester 1</option>
+                            <option value="Semester 2">Semester 2</option>
+                            <option value="Semester 3">Semester 3</option>
+                            <option value="Semester 4">Semester 4</option>
+                            <option value="Semester 5">Semester 5</option>
+                            <option value="Semester 6">Semester 6</option>
+                            <option value="Semester 7">Semester 7</option>
+                            <option value="Semester 8">Semester 8</option>
+                        </select>
+                        <input type="checkbox" id="updateSemesterCheckbox" name="updateSemesterCheckbox" value="updateSemester">
+                        <label for="updateSemesterCheckbox">Update Semester</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="updateDepartmentNo">Department No:</label>
+                        <input type="text" id="updateDepartmentNo" name="departmentNo">
+                        <input type="checkbox" id="updateDepartmentNoCheckbox" name="updateDepartmentNoCheckbox" value="updateDepartmentNo">
+                        <label for="updateDepartmentNoCheckbox">Update Department No</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="updateImage">Update Image:</label>
+                        <input type="file" id="updateImage" name="image">
+                        <input type="checkbox" id="updateImageCheckbox" name="updateImageCheckbox" value="updateImage">
+                        <label for="updateImageCheckbox">Update Image</label>
+                    </div>
+                    <button type="button" onclick="updateStudent()" class="submit-button">Update</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Developed by Mahesh A V</p>
+    </footer>
+    <script src="script/student_details_update_new_script.js"></script>
+</body>
+</html>

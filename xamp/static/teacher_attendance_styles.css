@@ -1,0 +1,136 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url('../image/logo_background.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center text globally */
+}
+
+/* Header styles */
+.header {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center text in the header */
+}
+
+.header img {
+    height: 80px;
+    width: auto;
+    margin-right: 20px;
+}
+
+.header h1 {
+    font-size: 2em;
+    margin: 0;
+    color: #fff;
+}
+
+/* Content styles */
+.content {
+    padding: 20px;
+    text-align: center; /* Center text in content */
+}
+
+.filter-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+    text-align: center; /* Center text in filter box */
+
+}
+
+label {
+    font-weight: bold;
+    color: #fbf8f8;
+}
+
+input[type="date"],
+input[type="time"] {
+    padding: 5px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.attendance-table {
+    margin: 20px 0;
+    text-align: center;
+    color: #0056b3; /* Center text in attendance table */
+}
+
+#departmentTableContainer {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text in department table container */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center; /* Center text in table */
+}
+
+table, th, td, tr  {
+    padding: 10px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center; /* Center text in table cells */
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center; /* Center text in download buttons */
+}
+
+/* Footer styles */
+footer {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center; /* Center text in footer */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+    font-size: 1em;
+}

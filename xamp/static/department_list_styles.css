@@ -1,0 +1,89 @@
+    /* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url('../image/logo_background.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+.header {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.header img {
+    height: 80px;
+    width: auto;
+    margin-right: 20px;
+}
+
+.header h1 {
+    font-size: 2em;
+    margin: 0;
+    color: white;
+}
+
+/* Content styles */
+.content {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+#departmentTableContainer {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border: 1px solid black;
+    
+
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Footer styles */
+footer {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+    font-size: 1em;
+}

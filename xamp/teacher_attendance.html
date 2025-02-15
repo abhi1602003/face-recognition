@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Attendance</title>
+    <link rel="stylesheet" href="static/teacher_attendance_styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="image/logo.png" alt="University Logo">
+        <h1>University Name</h1>
+    </div>
+    <div class="content">
+        <div class="filter-box">
+            <label for="attendanceDate" class="label">Select Date:</label>
+            <input type="date" id="attendanceDate" name="attendanceDate">
+
+            <button id="filterButton">Apply</button>
+        </div>
+        <div class="attendance-table">
+            <div id="departmentTableContainer">
+                <table id="teacherAttendanceTable">
+                    <thead>
+                        <tr>
+                            <th>Teacher ID</th>
+                            <th>Teacher Name</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Attendance data will be inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <p>Developed by Mahesh A V</p>
+    </footer>
+    <script src="script/teacher_attendance_script.js"></script>
+</body>
+</html>

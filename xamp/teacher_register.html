@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Register</title>
+    <link rel="stylesheet" href="static/teacher_register_new_styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="image/logo.png" alt="University Logo">
+        <h1>University Name</h1>
+    </div>
+    <div class="content">
+        <form id="teacherRegisterForm" enctype="multipart/form-data" action="teacher_register_process.php" method="POST">
+            <div class="register-table">
+                <label for="teacherName">Teacher Name:</label>
+                <input type="text" id="teacherName" name="teacherName" required>
+
+                <label for="teacherID">Teacher ID:</label>
+                <input type="text" id="teacherID" name="teacherID" required>
+
+                <label for="teacherPhone">Teacher Phone: (+91 XXXXXXXXXX)</label>
+                <input type="text" id="teacherPhone" name="teacherPhone" required>
+
+                <label for="teacherPost">Teacher Post:</label>
+                
+                <select id="teacherPost" name="teacherPost" required>
+                    <option value="HOD">HOD</option>
+                    <option value="Professor">Professor</option>
+                    <option value="Assistant Professor">Assistant Professor</option>
+                    <option value="Associate Professor">Associate Professor</option>
+                    <option value="Lab Assistant">Lab Assistant</option>
+                </select>
+               
+                <label for="departmentNo">Department No:</label>
+                <input type="text" id="departmentNo" name="departmentNo" required>
+
+                <label for="teacherImage">Teacher Image (PNG):</label>
+                <input type="file" id="teacherImage" class="button" name="teacherImage" accept="image/png" required>
+
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <div id="notification"></div>
+    </div>
+    <footer>
+        <p>Developed by Mahesh A V</p>
+    </footer>
+    <script src="script/teacher_register_script.js"></script>
+</body>
+</html>

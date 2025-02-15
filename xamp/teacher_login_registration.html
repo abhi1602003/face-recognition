@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Login Registration</title>
+    <link rel="stylesheet" href="static/teacher_login_registration_styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="image/logo.png" alt="University Logo">
+        <h1>University Name</h1>
+    </div>
+    <div class="content">
+        <div class="teacher-info-box">
+            <h2>Teacher Information</h2>
+            <form id="teacherInfoForm">
+                <div class="form-group">
+                    <label for="teacherId">Teacher ID:</label>
+                    <input type="text" id="teacherId" name="teacherId" required>
+                </div>
+                <button type="button" onclick="fetchTeacherInfo()">Get Info</button>
+                <div id="teacherInfo">
+                    <!-- Teacher info will be populated here -->
+                </div>
+            </form>
+        </div>
+        <div class="registration-box">
+            <h2>Teacher Login Registration</h2>
+            <form id="teacherRegistrationForm">
+                <input type="hidden" id="teacherIdHidden" name="teacherId">
+                <div class="form-group">
+                    <label for="newPassword">Create New Password:</label>
+                    <input type="password" id="newPassword" name="newPassword" required autocomplete="new-password">
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required autocomplete="new-password">
+                </div>
+                <button type="submit" class="submit-button">Register</button>
+            </form>
+        </div>        
+    </div>
+    <footer>
+        <p>Developed by Mahesh A V</p>
+    </footer>
+    <script src="script/teacher_login_registration_script.js"></script>
+</body>
+</html>

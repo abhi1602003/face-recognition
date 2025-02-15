@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Login</title>
+    <link rel="stylesheet" href="static/department_login_styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="image/logo.png" alt="University Logo">
+        <h1>University Name</h1>
+    </div>
+    <div class="content">
+        <div class="login-box">
+            <h2>Department Login</h2>
+            <form id="departmentLoginForm" action="department_login_process.php" method="POST">
+                <div class="form-group">
+                    <label for="departmentNo">Department No:</label>
+                    <input type="text" name="department_no" placeholder="Department No"required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" name="department_password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="submit-button">Login</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>Developed by Mahesh A V</p>
+    </footer>
+
+</body>
+</html>

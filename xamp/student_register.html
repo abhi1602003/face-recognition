@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="static/student_register_new_styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="image/logo.png" alt="University Logo">
+        <h1>University Name</h1>
+    </div>
+    <div class="content">
+        <h2>Student Registration Form</h2>
+        <form id="studentRegistrationForm" enctype="multipart/form-data" method="POST" action="student_register_process.php">
+            <div class="form-group">
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName" name="studentName" required>
+            </div>
+            <div class="form-group">
+                <label for="studentUSN">Student USN:</label>
+                <input type="text" id="studentUSN" name="studentUSN" required>
+            </div>
+            <div class="form-group">
+                <label for="studentPhone">Student Phone:</label>
+                <input type="tel" id="studentPhone" name="studentPhone" required>
+            </div>
+            <div class="form-group">
+                <label for="semester">Semester:</label>
+                <input type="text" id="semester" name="semester" required>
+            </div>
+            <div class="form-group">
+                <label for="departmentNo">Department No:</label>
+                <input type="text" id="departmentNo" name="departmentNo" required>
+            </div>
+            <div class="form-group">
+                <label for="studentImage">Student Image:</label>
+                <input type="file" class="submit-button" id="studentImage" name="studentImage" accept="image/png, image/jpeg" required>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+        <div id="notification"></div>
+    </div>
+    <footer>
+        <p>Developed by Mahesh A V</p>
+    </footer>
+    <script src="script/student_register_script.js"></script>
+</body>
+</html>

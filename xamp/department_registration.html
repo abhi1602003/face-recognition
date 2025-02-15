@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Registration</title>
+    <link rel="stylesheet" href="static/department_registration_styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="image/logo.png" alt="University Logo">
+        <h1>University Name</h1>
+    </div>
+    <div class="content">
+        <div class="registration-box">
+            <h2>Department Registration</h2>
+            <form id="departmentRegistrationForm" action="department_registration_process.php" method="POST">
+                <div class="form-group">
+                    <label for="departmentNo">Department No:</label>
+                    <input type="text" id="departmentNo" name="departmentNo" required>
+                </div>
+                <div class="form-group">
+                    <label for="departmentName">Department Name:</label>
+                    <input type="text" id="departmentName" name="departmentName" required>
+                </div>
+                <button type="submit" class="submit-button">Register</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>Developed by Mahesh A V</p>
+    </footer>
+    <script src="script/department_registration_script.js"></script>
+</body>
+</html>

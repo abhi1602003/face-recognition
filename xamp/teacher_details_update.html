@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Details Update</title>
+    <link rel="stylesheet" href="static/teacher_details_update_styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="image/logo.png" alt="University Logo">
+        <h1>University Name</h1>
+    </div>
+    <div class="content">
+        <div class="search-box">
+            <input type="text" id="teacherId" placeholder="Enter Teacher ID">
+            <button onclick="searchTeacher(); searchTeacherimg();">Search</button>
+        </div>
+        <div class="teacher-details">
+            <div class="left-side">
+                <h2>Teacher Details</h2>
+                <div id="teacherInfo"></div>
+                <img id="teacherImage"  width="300" height="200" loading="lazy">
+                <button id="deleteButton" onclick="deleteTeacher()">Delete Teacher</button>
+            </div>
+            <div class="right-side">
+                <h2>Update Details</h2>
+                <form id="updateTeacherForm">
+                    <div class="form-group">
+                        <label for="updateName">Teacher Name:</label>
+                        <input type="text" id="updateName" name="teacherName">
+                        <input type="checkbox" id="updateNameCheckbox" name="updateNameCheckbox" value="updateName">
+                        <label for="updateNameCheckbox">Update Name</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="updatePhone">Teacher Phone:</label>
+                        <input type="tel" id="updatePhone" name="teacherPhone">
+                        <input type="checkbox" id="updatePhoneCheckbox" name="updatePhoneCheckbox" value="updatePhone">
+                        <label for="updatePhoneCheckbox">Update Phone</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="updatePost">Teacher Post:</label>
+                        <select id="updatePost" name="teacherPost">
+                            <option value="HOD">HOD</option>
+                            <option value="Professor">Professor</option>
+                            <option value="Associate Professor">Associate Professor</option>
+                            <option value="Assistant Professor">Assistant Professor</option>
+                            <option value="Lecturer">Lecturer</option>
+                            <option value="Researcher">Researcher</option>
+                           
+                        </select>
+                        <input type="checkbox" id="updatePostCheckbox" name="updatePostCheckbox" value="updatePost">
+                        <label for="updatePostCheckbox">Update Post</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="updateDepartmentNo">Department No:</label>
+                        <input type="text" id="updateDepartmentNo" name="departmentNo">
+                        <input type="checkbox" id="updateDepartmentNoCheckbox" name="updateDepartmentNoCheckbox" value="updateDepartmentNo">
+                        <label for="updateDepartmentNoCheckbox">Update Department No</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="updateImage">Teacher Image:</label>
+                        <input type="file" id="updateImage" name="teacherImage">
+                        <input type="checkbox" id="updateImageCheckbox" name="updateImageCheckbox" value="updateImage">
+                        <label for="updateImageCheckbox">Update Image</label>
+                    </div>
+                    <button type="submit" class="submit-button">Update</button>
+                </form>
+                
+                
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Developed by Mahesh A V</p>
+    </footer>
+    <script src="script/teacher_details_update_new_script.js"></script>
+</body>
+</html>
